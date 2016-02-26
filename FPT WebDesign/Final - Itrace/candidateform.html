@@ -1,0 +1,85 @@
+!DOCTYPE html>
+<html>
+	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
+	<script src="jquery/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src= "materialize/js/materialize.js"></script>
+	<script type="text/javascript" src= "materialize/js/materialize.min.js"></script>
+<head>
+	<title>I-Trace Candidate Form</title>
+</head>
+<body>
+
+	<nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="img/FPT.png" height="65" width="65"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Login</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav" style="left: -250px;">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  	<div class="row">
+		<h2 align="center">Registration</h2>
+		<div class="col s6">  		
+		  		<div class="myregister" >
+		  			<div class="container mypadt">	  				
+		  					 <div class="row">
+			  					<div class="input-field col s12">
+									<h5 class="header">Personal Info</h5>
+								</div>	
+		  				        <div class="input-field col s6">
+						          <input id="firstname" type="text" class="validate">
+						         <label for="firstname">First Name</label>
+						        </div>
+						        <div class="input-field col s6">
+						          <input id="last_name" type="text" class="validate">
+						          <label for="last_name">Last Name</label>
+						        </div>
+						        <div class="input-field col s12">
+						          <input type="date" class="datepicker">
+						          <label for="birthdate">Birthdate</label>
+						        </div>
+						        <div class="input-field col s12">
+						          <input id="contact" type="number" class="validate">
+						          <label for="contact">Contact No.</label>
+						        </div>
+						      </div>
+						
+		  			</div>
+		  		</div>
+	
+  		</div>
+  		<div class="col s6">  	
+		  		<div class="myregister" >
+		  			<div class="container mypadt">
+		  				<div class="row">
+							<div class="input-field col s12">
+							<h5 class="header">Candidate Info</h5>
+							<ul id="dropdown2" class="dropdown-content">
+							<li><a href="#!">President</a></li>
+							<li><a href="#!">Vice President</a></li>
+							<li><a href="#!">Senator</a></li>
+							<li><a href="#!">Mayor</a></li>							
+							</ul>
+							<a class="btn dropdown-button" href="#!" data-activates="dropdown2">Position<i class="mdi-navigation-arrow-drop-down right"></i></a>
+							</div>
+				<!-- 				<select class="browser-default">
+								<option value="" disabled="" selected="">Choose your option</option>
+								<option value="1">Option 1</option>
+								<option value="2">Option 2</option>
+								<option value="3">Option 3</option>
+							</select> -->
+					
+		  			</div>
+		  		</div>
+	
+  		</div>
+  	</div>
+
+  	<script type="text/javascript" src="main/main.js"></script>
+</body>
+</html>
