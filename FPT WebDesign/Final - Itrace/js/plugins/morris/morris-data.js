@@ -1,55 +1,23 @@
 Morris.Bar({
+  barSizeRatio:0.15,
   element: 'bar-example',
   data: [
-    { y: '2006', a: 100, b: 90 },
-    { y: '2007', a: 75,  b: 65 },
-    { y: '2008', a: 50,  b: 40 },
-    { y: '2009', a: 75,  b: 65 },
-    { y: '2010', a: 50,  b: 40 },
-    { y: '2011', a: 75,  b: 65 },
-    { y: '2012', a: 100, b: 90 }
-
+    { y: 'District 1', a: 100},
+    { y: 'District 2', a: 32}
   ],
+ hoverCallback: function(index, options, content, row) {
+      return "<strong>"+row.y+"</strong>" + "<br>" + "<span style='color:#10DCFF;'>"+row.a + "%"+"</span>";
+  },
+  barColors: ['#6495ED'],
   xkey: 'y',
-  ykeys: ['a', 'b'],
-  labels: ['Series A', 'Series B'],
+  ykeys: ['a'],
+  labels: ['Series A'],
   resize: true
 }).on('click',function(i,row){
-  console.log(row)
-  console.log(i,row)
+  $('.selectpicker').selectpicker('val', 'Barangay');
+  refreshView();
+  $("#changeView").append("<div class='panel-heading'>Barangay</div>");
+  $("#changeView").append("<div id='bar-example'></div>");
+  graphMunicipal();
 });
 
-Morris.Donut({
-  element: 'donut-example1',
-  data: [
-    {label: "Voted", value: 22},
-    {label: "Not Voted", value: 44}]
-});
-
-Morris.Donut({
-  element: 'donut-example2',
-  data: [
-    {label: "Voted", value: 40},
-    {label: "Not Voted", value: 60}]
-});
-
-Morris.Donut({
-  element: 'donut-example3',
-  data: [
-    {label: "Voted", value: 22},
-    {label: "Not Voted", value: 76}]
-});
-
-Morris.Donut({
-  element: 'donut-example4',
-  data: [
-    {label: "Voted", value: 80},
-    {label: "Not Voted", value: 20}]
-});
-
-Morris.Donut({
-  element: 'donut-example5',
-  data: [
-    {label: "Voted", value: 80},
-    {label: "Not Voted", value: 20}]
-});

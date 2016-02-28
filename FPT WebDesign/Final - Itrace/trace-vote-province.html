@@ -23,6 +23,8 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -49,6 +51,14 @@
             <a class="navbar-brand itrace" href="index.html"><img src="img/FPT.png" class="fptimg"></a>
         </div>	
     </nav>
+
+    <select id="level" class="selectpicker custom-dropdown" data-width="10%">
+        <option>District</option>
+        <option>Barangay</option>
+        <option>Precinct</option>
+    </select>
+
+
     <ul class="nav navbar-nav side-nav custom-side-nav">
         <li>
             <div><span class="glyphicon glyphicon-user profile" aria-hidden="true"></span></div>
@@ -60,6 +70,12 @@
             <div class="last-name"><span>"MAGTO"</span></div>
         </li>
         <li>
+            <div class="custom-for"><span>for</span></div>
+        </li>
+        <li>
+            <div class="position"><span>MAYOR</span></div>
+        </li>
+        <li>
             <div class="no-of-vote"><span>48,629</span></div>
         </li>
         <li>
@@ -67,8 +83,8 @@
         </li>
     </ul>
 
-    <div class="panel panel-default custom-panel">
-        <div class="panel-heading">Provincial</div>
+    <div id="changeView" class="panel panel-default custom-panel">
+        <div class="panel-heading">Municipal</div>
         <div id="bar-example"></div>
     </div>
 
@@ -86,9 +102,8 @@
     <script src="js/plugins/morris/raphael.min.js"></script>
     <script src="js/plugins/morris/morris.min.js"></script>
     <script src="js/plugins/morris/morris-data.js"></script>
-
-
-
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/customize-js/main.js"></script>
 </body>
 
 </html>
